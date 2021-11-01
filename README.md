@@ -1,2 +1,1 @@
-# Earthapp
-My earth app
+# Clicker

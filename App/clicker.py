@@ -3,7 +3,6 @@ from tkinter import ttk
 from tkinter import *
 import os
 
-
 def raise_frame(frame):
     frame.tkraise()
 
@@ -24,16 +23,16 @@ for frame in (f1, f2, s):
     frame.grid(row=20, column=20, sticky='news')
 
 
-clicks = tkinter.IntVar()
-inc = tkinter.IntVar()
-
-
-def clicked(event=None):
-   clicks.set(clicks.get() + inc)
+clicks = IntVar()
+inc = IntVar()
 
 
 def increase(event=None):
-    inc.set(inc.get() + 2)
+    inc.set(inc.get() + 1)
+
+
+def clicked(event=None):
+   clicks.set(clicks.get() + inc.get())
 
 
 #img = PhotoImage(file='Assets\c.png')
